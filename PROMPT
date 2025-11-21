@@ -1,0 +1,23 @@
+# Left Prompt: 
+PROMPT=''
+
+# Username in cyan
+PROMPT+='%F{cyan}%n%f'
+
+# Separator @
+PROMPT+='@'
+
+# Hostname in green (full hostname)
+PROMPT+='%F{green}%M%f'
+
+# Success/failure indicator
+PROMPT+=' [%(?.%F{green}√.%F{red}?%?)%f]'
+
+# Background jobs count
+PROMPT+='[%j] '
+
+# Current directory in magenta 
+PROMPT+='%F{magenta}%~%f '
+
+# Prompt character (% for user, # for root)
+PROMPT+='%# >'
